@@ -8,7 +8,7 @@ google.charts.load('current', {'packages':['sankey']});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
-    var queryString = encodeURIComponent('SELECT A,P,Q,R,S ORDER BY A limit 10');
+    var queryString = encodeURI('SELECT A,P,Q,R,S ORDER BY A limit 10');
     var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1lypBK0JY7XjYf2HrbldkYpNBbbOQd1ma/edit?usp=sharing&headers=1&tq=' + queryString);
     query.send(handleQueryResponse_Sankey);
 }
