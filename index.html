@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Charts - Fabián Caballero</title>
+    <!-- Usamos Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Script Js Google Chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="sankey.js"></script>
+    <script src="anillo.js"></script>
+    <script src="linea.js"></script>
+    <script src="escalonado.js"></script>
+    <script src="columna.js"></script>
+    <script src="pie.js"></script>
+</head>
+<body>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 m-4">
+        <div>
+            <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+                <h1 class="text-2xl font-bold text-gray-800 text-center mb-4">Sankey</h1>
+                <div id="chart_sankey" class="h-64"></div>
+            </div>
+        </div>
+    
+        <div>
+            <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+                <h1 class="text-2xl font-bold text-gray-800 text-center mb-4">Anillo</h1>
+                <div id="chart_anillo" class="h-64"></div>
+            </div>
+        </div>
+    
+        <div>
+            <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+                <h1 class="text-2xl font-bold text-gray-800 text-center mb-4">Línea Múltiple</h1>
+                <div id="chart_linea" class="h-64"></div>
+            </div>
+        </div>
+    
+        <div>
+            <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+                <h1 class="text-2xl font-bold text-gray-800 text-center mb-4">Escalonado</h1>
+                <div id="chart_escalonado" class="h-64"></div>
+            </div>
+        </div>
+    
+        <div>
+            <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+                <h1 class="text-2xl font-bold text-gray-800 text-center mb-4">Columnas</h1>
+                <div id="chart_columna" class="h-64"></div>
+            </div>
+        </div>
+    
+        <div>
+            <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+                <h1 class="text-2xl font-bold text-gray-800 text-center mb-4">Circular 3D</h1>
+                <div id="chart_pie" class="h-64"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
