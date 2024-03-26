@@ -9,7 +9,7 @@ google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
-    var queryString = encodeURI('SELECT A,R,S ORDER BY R DESC limit 10');
+    var queryString = encodeURI('SELECT A,R,S ORDER BY B ASC limit 10');
     var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1lypBK0JY7XjYf2HrbldkYpNBbbOQd1ma/edit?usp=sharing&headers=1&tq=' + queryString);
     query.send(handleQueryResponse_Escalonado);
 }
@@ -19,7 +19,7 @@ function handleQueryResponse_Escalonado(response) {
     console.log(data);
 
     var options = {
-        title: 'Ventas Globales y Critic Rating por Juego',
+        title: 'Ventas Globales vs JP - Top 10 de Juegos',
         titleTextStyle: {
             color: '#4a4a4a',
             fontSize: 20,
